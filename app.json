@@ -1,74 +1,69 @@
 {
-  "name": "سورس بريفيل",
-  "logo": "https://telegra.ph/file/03341a31ae8da70c95ae6.jpg",
+  "name": "ғᴀʟʟᴇɴ ᴍᴜsɪᴄ",
+  "logo": "https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
   "description": "A SuperFast VC Player bot to play songs in Telegram Video Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram", "fallen"],
-  "repository": "https://github.com/Elbrevl/alimui",
+  "repository": "https://github.com/AnonymousR1025/FallenMusic",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
-      "description": "ضع كود بايروجرام ",
+      "description": "Pyrogram String Session of assistant account",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "ضع توكن بوتك ",
+      "description": "Get this value from @BotFather on TG",
       "required": true
     },
     "BOT_NAME": {
-      "description": "معرف بوتك مره تانيه بدون @",
+      "description": "A name for your MusicPlayer Bot",
       "required": false,
       "value": ""
     },
     "BOT_USERNAME": {
-      "description": " معرف بوتك بدون @",
+      "description": "Username of your bot without @",
       "required": false,
       "value": ""
     },
     "API_ID": {
-      "description": "ايبي ايدي ضع هنا my.telegram.org/apps",
+      "description": "Get this value from my.telegram.org/apps",
       "required": false
     },
     "API_HASH": {
-      "description": "ايبي هاش ضع هنا my.telegram.org/apps",
+      "description": "Get this value from from my.telegram.org/apps",
       "required": false
     },
     "OWNER_USERNAME": {
-      "description": "يوزر المطور بدون @",
+      "description": "Username of the person who will known as owner of the bot, without @",
       "required": false,
-      "value": "Q_P_K_E"
+      "value": "anonymous_was_bot"
     },
     "SUPPORT_GROUP": {
-      "description": "معرف جروب الدعم بدون @",
+      "description": "Username of the group where users will go and disturb you, without @",
       "required": false,
-      "value":
-"value": "c_3_517"
+      "value": "DevilsHeavenMF"
     },
     "SUDO_USERS": {
-      "description": "ايدي مالك البوت.",
+      "description": "User IDs of the users who will counted as admin everywhere (if more than one separate them by space).",
       "required": true,
-      "value": ""
+      "value": "1356469075"
     },
     "START_IMG": {
-      "description": "ضع صورة البوت",
+      "description": "Telegraph link of the pic which you want to set as the start pic of your bot",
       "required": false
     },
     "PING_IMG": {
-      "description": "ضع صورة البوت مره تانيه",
+      "description": "Telegraph link of the pic which you want to set as the ping pic of your bot",
       "required": false
     },
     "PMPERMIT": {
-      "description": "سيبها زي ماهي",
+      "description": "If you want to notify users who pm to assistant account that it's the assistant account of your bot so don't spam messages there (ENABLE/DISABLE).",
       "required": false,
       "value": "ENABLE"
     },
     "DURATION_LIMIT": {
-      "description": "سيبها زي ماهي تحياتي لك المبرمج بريفيل",
+      "description": "Max audio duration limit for downloads (minutes).",
       "required": false,
       "value": "90"
     }
   }
-   "UPDATES_CHANNEL":{
-    "description":يوزر القناه بدون@
-     "required": false,
-      "value":b_1_4_7
-   
+}
