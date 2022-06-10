@@ -1,0 +1,74 @@
+{
+  "name": "سورس بريفيل",
+  "logo": "https://telegra.ph/file/03341a31ae8da70c95ae6.jpg",
+  "description": "A SuperFast VC Player bot to play songs in Telegram Video Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram", "fallen"],
+  "repository": "https://github.com/Elbrevl/alimui",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {
+      "description": "ضع كود بايروجرام ",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "ضع توكن بوتك ",
+      "required": true
+    },
+    "BOT_NAME": {
+      "description": "معرف بوتك مره تانيه بدون @",
+      "required": false,
+      "value": ""
+    },
+    "BOT_USERNAME": {
+      "description": " معرف بوتك بدون @",
+      "required": false,
+      "value": ""
+    },
+    "API_ID": {
+      "description": "ايبي ايدي ضع هنا my.telegram.org/apps",
+      "required": false
+    },
+    "API_HASH": {
+      "description": "ايبي هاش ضع هنا my.telegram.org/apps",
+      "required": false
+    },
+    "OWNER_USERNAME": {
+      "description": "يوزر المطور بدون @",
+      "required": false,
+      "value": "Q_P_K_E"
+    },
+    "SUPPORT_GROUP": {
+      "description": "معرف جروب الدعم بدون @",
+      "required": false,
+      "value":
+"value": "c_3_517"
+    },
+    "SUDO_USERS": {
+      "description": "ايدي مالك البوت.",
+      "required": true,
+      "value": ""
+    },
+    "START_IMG": {
+      "description": "ضع صورة البوت",
+      "required": false
+    },
+    "PING_IMG": {
+      "description": "ضع صورة البوت مره تانيه",
+      "required": false
+    },
+    "PMPERMIT": {
+      "description": "سيبها زي ماهي",
+      "required": false,
+      "value": "ENABLE"
+    },
+    "DURATION_LIMIT": {
+      "description": "سيبها زي ماهي تحياتي لك المبرمج بريفيل",
+      "required": false,
+      "value": "90"
+    }
+  }
+   "UPDATES_CHANNEL":{
+    "description":يوزر القناه بدون@
+     "required": false,
+      "value":b_1_4_7
+   
