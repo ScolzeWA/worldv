@@ -37,7 +37,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-@Client.on_message(command(["ping", "repo", "anon", "alive"]) & filters.group & ~filters.edited & ~filters.private)
+@Client.on_message(command(["ping", "repo", "herox", "alive"]) & filters.group & ~filters.edited & ~filters.private)
 
 async def help(client: Client, message: Message):
     await message.delete()
@@ -49,21 +49,21 @@ async def help(client: Client, message: Message):
     start = datetime.now()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
-    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
+    await message.reply_sticker("CAACAgQAAx0CWafJ8wABCR6BYpQs0_Y6MM6VoJpHtUd9dPxtl-IAAkwMAALRLKlQ20Ol6ATM7iIkBA")
     rahul = await message.reply_photo(
         photo=f"{PING_IMG}",
-        caption="🍑 ᴩɪɴɢɪɴɢ... 🍑",
+        caption="ᴩɪɴɢɪɴɢ...",
     )
     await rahul.edit_text(
-        f"""<b> 𝗣 𝗢 𝗡 𝗚 ! 😂</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:</u></b>\n\n• ᴜᴩᴛɪᴍᴇ : {bot_uptime}\n• ᴄᴩᴜ : {cpu}%\n• ᴅɪsᴋ : {disk}%\n• ʀᴀᴍ : {mem}""",
+        f"""<b> ᴩᴏɴɢ  !</b>\n  🏓 `{resp} ᴍs`\n\n<b><u>{BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:</u></b>\n\n• ᴜᴩᴛɪᴍᴇ : {bot_uptime}\n• ᴄᴩᴜ : {cpu}%\n• ᴅɪsᴋ : {disk}%\n• ʀᴀᴍ : {mem}""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• 𝙎𝙐𝙋𝙋𝙊𝙍𝙏𝙂𝙍𝙊𝙐𝙋 •", url=f"https://t.me/c_3_517}"
+                        "💖 sᴜᴘᴘᴏʀᴛ ", url=f"https://t.me/{SUPPORT_GROUP}"
                     ),
                     InlineKeyboardButton(
-                        "• 𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙇𝘽𝙍𝙀𝙑𝙀𝙇 •", url="https://t.me/b_1_4_7"
+                        "sᴏᴜʀᴄᴇ", url="https://github.com/herox-xd/Tricky-anonmusic"
                     )
                 ]
             ]
