@@ -17,9 +17,9 @@ async def clear_downloads(_, message: Message):
     if ls_dir:
         for file in os.listdir(downloads):
             os.remove(os.path.join(downloads, file))
-        await message.reply_text("✅ **ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ᴅᴏᴡɴʟᴏᴀᴅ ғɪʟᴇs {} ᴅᴀᴛᴀʙᴀsᴇ**".format(bn) )
+        await message.reply_text("**ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ꜰɪʟᴇs ꜰʀᴏᴍ {} ᴅᴀᴛᴀʙᴀsᴇ ʙᴀʙʏ​**".format(bn) )
     else:
-        await message.reply_text("❌ **ɴᴏ ғɪʟᴇs ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ**")
+        await message.reply_text("**ɴᴏ ꜰɪʟᴇs ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴏɴ ᴅᴀᴛᴀʙᴀsᴇ ʙᴀʙʏ​**")
 
         
 @Client.on_message(command(["rmw", "clean"]) & ~filters.edited)
@@ -31,9 +31,9 @@ async def clear_raw(_, message: Message):
     if ls_dir:
         for file in os.listdir(raw_files):
             os.remove(os.path.join(raw_files, file))
-        await message.reply_text("✅ **ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ʀᴀᴡ ғɪʟᴇs{}**".format(bn) )
+        await message.reply_text("**{} ᴅᴇʟᴇᴛᴇᴅ ᴀʟʟ ʀᴀᴡ ꜰɪʟᴇs**".format(bn) )
     else:
-        await message.reply_text("❌ **ɴᴏ ʀᴀᴡ ғɪʟᴇs**")
+        await message.reply_text("**ɴᴏ ʀᴀᴡ ꜰɪʟᴇs ꜰᴏᴜɴᴅ​**")
 
 
 @Client.on_message(command(["clear", " rmp"]) & ~filters.edited)
@@ -46,6 +46,6 @@ async def cleanup(_, message: Message):
     if ls_dir:
         for dta in os.listdir(pth):
             os.system("rm -rf *.webm *.jpg")
-        await message.reply_text("✅**ᴄʟᴇᴀɴᴇᴅ​**")
+        await message.reply_text("**ᴄʟᴇᴀɴᴇᴅ​**")
     else:
-        await message.reply_text("✅**ᴄʟᴇᴀɴᴇᴅ​**")
+        await message.reply_text("**ᴄʟᴇᴀɴᴇᴅ​**")

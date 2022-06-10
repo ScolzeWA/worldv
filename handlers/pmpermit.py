@@ -18,19 +18,19 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                f"ʜᴇʏ {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ sᴘᴀᴍ ʜᴇʀᴇ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙇𝘽𝙍𝙀𝙑𝙀𝙇](t.me/b_1_4_7).\n",
+                f"ʜᴇʏ {message.from_user.mention()},\nᴛʜɪs ɪs [{bn}](t.me/{lel}) ʙᴏᴛ ᴀssɪsᴛᴀɴᴛ ᴀᴄᴄᴏᴜɴᴛ.\n\nᴅᴏɴ'ᴛ ᴛʀʏ ᴛᴏ sᴘᴀᴍ ʜᴇʀᴇ ᴇʟsᴇ ʏᴏᴜ ᴡɪʟʟ ɢᴇᴛ ꜰᴜ*ᴋᴇᴅ ʙʏ [H E R O X](t.me/{OWNER_USERNAME}).\n",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "• ʙᴏᴛ •", url=f"https://t.me/{lel}"
+                        "🥱 ʙᴏᴛ 🥱", url=f"https://t.me/{lel}"
                     ),
                     InlineKeyboardButton(
-                        "• 𝙎𝙐𝙋𝙋𝙊𝙍𝙏𝙂𝙍𝙊𝙐𝙋 •", url="https://t.me/c_3_517"
+                        "💖 sᴜᴩᴩᴏʀᴛ 💖", url="https://github.com/HeroX-xD/Tricky-anonmusic"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "• 𝙎𝙊𝙐𝙍𝘾𝙀 𝙀𝙇𝘽𝙍𝙀𝙑𝙀𝙇 •", url=f"t.me/b_1_4_7"
+                        "💞 ᴏᴡɴᴇʀ​​ 💞", url=f"https://t.me/{OWNER_USERNAME}"
                     )]
             ]
         ),
@@ -47,11 +47,11 @@ async def bye(client: Client, message: Message):
         queryy = text[1]
         if queryy == "on":
             PMSET = True
-            await message.reply_text("**✅ ᴘᴍ-ᴘᴇʀᴍɪᴛ ᴛᴜʀɴᴇᴅ ᴏɴ...**")
+            await message.reply_text("» ᴘᴍ ᴘᴇʀᴍɪᴛ ᴇɴᴀʙʟᴇᴅ ʙᴀʙʏ.")
             return
         if queryy == "off":
             PMSET = None
-            await message.reply_text("**❎ ᴘᴍ-ᴘᴇʀᴍɪᴛ ᴛᴜʀɴᴇᴅ ᴏғғ...**")
+            await message.reply_text("» ᴘᴍ ᴘᴇʀᴍɪᴛ ᴅɪsᴀʙʟᴇᴅ ʙᴀʙʏ.")
             return
 
 @USER.on_message(filters.text & filters.private & filters.me)        
@@ -59,7 +59,7 @@ async def autopmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ ᴅᴜᴇ ᴛᴏ ᴏᴜᴛɢᴏɪɴɢ ᴍᴇssᴀɢᴇ...**")
+        await message.reply_text("» ᴀᴜᴛᴏ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​ .")
         return
     message.continue_propagation()    
     
@@ -68,7 +68,7 @@ async def pmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if not chat_id in pchats:
         pchats.append(chat_id)
-        await message.reply_text("**✅ ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ...**")
+        await message.reply_text("» ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​.")
         return
     message.continue_propagation()    
     
@@ -78,6 +78,6 @@ async def rmpmPermiat(client: USER, message: Message):
     chat_id = message.chat.id
     if chat_id in pchats:
         pchats.remove(chat_id)
-        await message.reply_text("**❎ ᴅɪs-ᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ...**")
+        await message.reply_text("» ᴅɪsᴀᴘᴘʀᴏᴠᴇᴅ ᴛᴏ ᴘᴍ​.")
         return
     message.continue_propagation()

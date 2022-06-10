@@ -8,7 +8,7 @@ from pyrogram import Client
 StartTime = time.time()
 
 app = Client(
-    "DarkxMusic",
+    "FallenMusic",
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
